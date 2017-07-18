@@ -8,17 +8,17 @@ var user_items = [];
 // Food costs $100
 
 while(current_money >= 100){
-    console.log("You currently have" + current_money + ". Sword = $500, Food = $100.");
-    var choice = prompt("Do you want a sword, or do you want food?");
-    if(choice == "sword"){
+    console.log("You currently have " +  current_money + ". Sword = $500, Food = $100.");
+    var choice = prompt("Do you want a sword or food? ");
+    if(choice == "sword" , "Sword"){
         if(current_money >= 500){
              current_money = current_money - 500;
-             user_items.push("sword");
+             user_items.push("sword" , "Sword");
         }else{
-            console.log("Sorry, no money");
+            console.log("You don't have enough for that ");
         }
         
-    }else if(choice == "food"){
+    }else if(choice == "food" , "Food"){
         current_money = current_money - 100;
         user_items.push("food");
 
@@ -41,7 +41,7 @@ while(current_money >= 100){
         
     
     
-    }
+    
 
 
 

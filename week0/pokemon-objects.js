@@ -54,4 +54,3 @@ for(var i = 0; i < pokeRoster.length; i++){
  console.log(pokeRoster[i]); 
 }
 }
-printRoster();

@@ -14,7 +14,8 @@ function randLetter(length){
 
 for (var i = 0; i < letters.length; i++ );{
 
-str = str + (randLetter(letters)){
+str = str + (randLetter(letters))}
+{
 
     return 
 
