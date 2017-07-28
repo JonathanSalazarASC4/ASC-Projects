@@ -1,0 +1,80 @@
+body{
+    background:"lol.jpg";
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    }
+h1{
+font-family: PacFont;
+border-style: dotted;
+color: white;
+width: 30%;
+}
+
+
+h2{
+    font-family: PacFont;
+    color: white;
+    
+}
+
+.Gabe{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.Gabe img {
+    max-width: 200px;
+    
+}
+
+p {
+    font-size: 140%;
+    font-family: Oswald;
+    color: white;
+    
+
+}
+
+/* Galaxy S5 */
+@media(max-width: 360px){
+    body{
+    width: 100%;
+  
+    
+    }
+}
+
+/* Ipad */
+
+@media(max-width: 768px){
+    body{
+    width: 100%;
+    
+    }
+}
+
+/* Iphone 6 */
+
+@media(max-width: 375px){
+    body{
+    width: 100%;
+    
+    }
+}
+/* Nexus 5x */
+@media(max-width: 412px){
+    body{
+    width: 100%;
+    
+    }
+}
+/* Ipad Pro */
+@media(max-width: 1024px){
+    body{
+    width: 100%;
+    
+    }
+}
+
+
