@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel = "stylesheet" type = "text/css" href = "sketch.css" />
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+<body>
+	<br>
+    <center> <img class="blink-image" src="https://image.ibb.co/eNe9ra/arcade_font_writer.png">
+        <center>
+  
+		<center>
+            <center>
+                <div class="row">
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#body" onclick="roll('rock')" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <center>
+                                <img onlcik="roll('rock')" img id="rock" height=200px width=200px src="https://im3.ezgif.com/tmp/ezgif-3-86e7a3a4be.gif" class="img-responsive"
+                                    alt="rock"> </center>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#body" onclick="roll('paper')" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <center><img onclick="play('paper')" id="paper" height=200px width=200px src="https://im3.ezgif.com/tmp/ezgif-3-f1d6d9cb67.gif"></img>
+                            </center>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#body" onclick="roll('scissor')" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <center><img onclick="play('scissors')" id="scissor" height=200px width=200px src="https://im3.ezgif.com/tmp/ezgif-3-6b2e7fd4ea.gif"></img>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userContainer">
+                            <form>
+                                <div class="textContainer">
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div class="GObutton">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="allMessages">
+                    <font size="12"></font>
+                </div>
+                <div class="results">
+                    <font size="6"></font>
+                </div>
+
+        <center>
+		<div class="main">
+			<div class="container">
+				
+				<aside class="aside">
+					<div class="scorebox">
+						<h2 class ="h1lol">Score</h2>
+						<div class="score-num"><span id="wins">0</span> <br />wins</div>
+						<div class="score-divider"><span>-</span></div>
+						<div class="score-num"><span id="loses">0</span> <br />loses</div>
+					</div>
+					<button type="reset" id="reset" onclick="reset()">reset scores</button>
+				</aside>
+			</div>
+		</div>
+        </center>
+            <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAiE-05pE0sLblKh3g5FOiC8AjBIymBkZs",
+    authDomain: "rpss-ee1fd.firebaseapp.com",
+    databaseURL: "https://rpss-ee1fd.firebaseio.com",
+    projectId: "rpss-ee1fd",
+    storageBucket: "",
+    messagingSenderId: "891324650101"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src ="main.js"></script>
+                   
+</body>
+</html>
